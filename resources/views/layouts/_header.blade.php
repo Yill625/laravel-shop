@@ -33,6 +33,12 @@
                     </a>
                 </li>
                 @else
+                <li>
+                    <a href="{{ route('cart.index') }}">
+                        <span aria-hidden="true" class="glyphicon glyphicon-shopping-cart">
+                        </span>
+                    </a>
+                </li>
                 <li class="dropdown">
                     <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
                         <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
