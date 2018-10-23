@@ -1,4 +1,4 @@
-<div class="box box-info">
+<div class="box box-info ">
     <div class="box-header with-border">
         <h3 class="box-title">订单流水号：{{ $order->no }}</h3>
         <div class="box-tools">
