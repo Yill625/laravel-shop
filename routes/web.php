@@ -45,6 +45,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::post('orders/{order}/review', 'OrdersController@sendReview')->name('orders.review.store');
         Route::post('orders/{order}/apply_refund', 'OrdersController@applyRefund')->name('orders.apply_refund');
         Route::post('orders/{order}/received', 'OrdersController@received')->name('orders.received');
+        Route::get('coupon_codes/{code}', 'CouponCodesController@show')->name('coupon_codes.show');
     });
     // 结束
 });
