@@ -94,6 +94,9 @@ class CouponCodesController extends Controller
                 return $value ? '是' : '否';
             });
             $grid->created_at('创建时间');
+            $grid->actions(function ($actions) {
+                $actions->disableView();
+            });
         });
     }
 
